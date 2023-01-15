@@ -1,7 +1,7 @@
 """
 Author: Victor Gimenes
 Date: 13/10/2021
-Módulo criado para armazenar funções relacionadas da criação e envio de emails via outlook app utilizando python e html.
+Módulo criado para armazenar funções relacionadas a criação e envio de emails via outlook app utilizando python e html.
 """
 
 # Importando módulos externos
@@ -11,15 +11,16 @@ import os
 # Funções locais
 def send_email(mail_to:str, mail_subject:str, mail_html:str, send:int, mail_cc:str=None, path: str=None):
     """
-    Função responsável automtizar o envio de emails via outlook app.
+    Função responsável por automtizar o envio de emails via outlook app.
     
     Obs.: outlook precisar estar logado e aberto no computador.
 
     Args:
-        mail_to (str): remetentes para o email (; como delimitador).
+        mail_to (str): destinatários (podem ser mútluplos tendo ; como delimitador).
         mail_subject (str): assunto do email.
         mail_html (str): corpo do email, em html.
-        send (int): deve ser enviado (1) ou somento plotado no outlook (0).
+        send (int): envio direto (1) ou plot no outlook (0).
+        mail_cc (str): destinatários em cópia (default=None).
         path (list): lista contendo o path de todas os arquivos que devem ser colocados em anexo.
     """
     # Criando a conexão com o app do outlook
