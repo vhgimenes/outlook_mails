@@ -1,7 +1,7 @@
 """
 Author: Victor Gimenes
 Date: 13/10/2021
-Módulo criado para conter funções relacionadas a automatização da criação e envio de emails utilizando python e html.
+Módulo criado para armazenar funções relacionadas da criação e envio de emails via outlook app utilizando python e html.
 """
 
 # Importando módulos externos
